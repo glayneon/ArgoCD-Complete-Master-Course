@@ -11,7 +11,7 @@ spec:
     path: 0-Demo_Files/Nginx_Deployment
     repoURL: 'https://github.com/glayneon/ArgoCD-Complete-Master-Course.git'
     targetRevision: HEAD
-  project: default
+  project: argocd-labs
   syncPolicy:
     automated:
       prune: false
