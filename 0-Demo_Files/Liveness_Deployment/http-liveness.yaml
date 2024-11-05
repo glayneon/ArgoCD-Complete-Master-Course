@@ -7,12 +7,12 @@ metadata:
 spec:
   containers:
   - name: liveness
-    image: registry.k8s.io/liveness
+    image: registry.k8s.io/sig-storage/livenessprobe
     args:
     - /server
     livenessProbe:
       httpGet:
-        path: /healthz1
+        path: /healthz
         port: 8080
         httpHeaders:
         - name: Custom-Header
